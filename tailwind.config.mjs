@@ -10,6 +10,14 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        brandOffWhite: "#D6D5D5",
+        brandRed: "#E5484D",
+        brandGrey: "#BFBFBF",
+      },
+      fontFamily: {
+        impact: ["var(--font-impact)","sans-serif"],
+        BSD : ["var(--font-big-shoulders-display)", "cursive"],
+        ibm: ["var(--font-ibm)", "monospace"],
       },
     },
   },
