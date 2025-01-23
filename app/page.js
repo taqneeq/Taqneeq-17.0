@@ -1,10 +1,10 @@
 import Image from "next/image";
+import Hero from "@/app/screens/hero";
 
 export default function Home() {
   return (
     <div>
-      <h1 className="font-ibm">Hiii</h1>
-      <h2 className="font-BSD">Taqneeq</h2>
+      <Hero/>
     </div>
   );
 }

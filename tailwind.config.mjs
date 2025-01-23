@@ -14,6 +14,7 @@ export default {
         brandRed: "#E5484D",
         brandGrey: "#BFBFBF",
       },
+      
       fontFamily: {
         impact: ["var(--font-impact)","sans-serif"],
         BSD : ["var(--font-big-shoulders-display)", "cursive"],
@@ -21,5 +22,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 };
