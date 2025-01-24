@@ -8,7 +8,7 @@ const index = () => {
       {/* Background Text Layer */}
       <div className="absolute -z-20" id="base-1">
         <div>
-          <h1 className="text-9xl font-impact text-center font-retro font-bold md:mt-4 mr-20 md:mr-40 text-brandOffWhite">
+          <h1 className="text-9xl  font-impact text-center font-retro font-bold md:mt-4 mr-20 md:mr-40 text-brandOffWhite">
             TAQNEEQ 17.0
           </h1>
         </div>
@@ -53,6 +53,10 @@ const index = () => {
             </h1>
         </div>
       </div> 
+      <p className="absolute bottom-10 left-10 text-brandOffWhite font-ibm text-base font-extralight max-w-md z-30">
+        Step into the realm of the most prestigious technical fest, where we
+        value bold ideas and innovations.
+      </p>
     </section>
   );
 };
