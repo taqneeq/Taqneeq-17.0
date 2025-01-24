@@ -3,9 +3,8 @@ import React from 'react'
 import Image from "next/image";
 import C1 from "./comp1.svg";
 export default function competition() {
-    const comp = [C1, C1, C1, C1];
-}
-const index = () => {
+    const comp = [C1, C1, C1];
+
   return (
     <section
       className="min-h-[90vh] max-h-[1440px] max-w-7xl flex flex-col justify-center items-center relative md:gap-5 mx-auto"
@@ -20,7 +19,7 @@ const index = () => {
         {comp.map((comp, index) => (
           <div
             key={index}
-            className="relative w-full h-80"
+            className="relative w-full h-96"
           >
             <Image
               src={comp}
