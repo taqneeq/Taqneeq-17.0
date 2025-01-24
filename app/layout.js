@@ -1,6 +1,7 @@
 import { IBM_Plex_Mono, Big_Shoulders_Display} from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
+import Navbar from "./components/navbar";
 import Image from "next/image";
 
 const impact = localFont({
@@ -32,6 +33,7 @@ export default function RootLayout({ children }) {
       <body
         className={` ${ibm.variable} ${bigShouldersDisplay.variable} ${impact.variable} antialiased w-full min-h-screen relative`}
       >
+        <Navbar/>
         <div className="fixed inset-0 z-0 h-screen w-screen">
           <img src={"/cosmic_bg.png"} alt="cosmic" className="opacity-60 h-full w-full object-cover"/>{" "}
         </div>
