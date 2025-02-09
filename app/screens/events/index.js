@@ -50,7 +50,7 @@ const Card = ({ icon, titleIcon, title, description, buttonText }) => {
 
   return (
     <div
-      className="relative bg-[#12141c]/70 rounded-[20px] overflow-hidden cursor-pointer transition-all duration-500 transform-gpu border border-white/5 backdrop-blur-lg hover:-translate-y-2 hover:scale-105 hover:bg-[#1a1d2a]/80 hover:shadow-lg hover:shadow-[#4a90ff]/10"
+      className="relative bg-[#12141c]/70 rounded-[20px] overflow-hidden cursor-pointer transition-all duration-500 transform-gpu border border-white/5 backdrop-blur-lg hover:-translate-y-2 hover:scale-105 hover:bg-[#1a1d2a]/80 hover:shadow-lg hover:shadow-brandRed/10"
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={handleMouseLeave}
