@@ -60,7 +60,7 @@ const index = () => {
       </div>
 
       {/* Description Text */}
-      <p className="absolute bottom-24 text-center md:text-left md:bottom-10 justify-center w-[80%] md:w-full md:left-10 text-brandOffWhite font-ibm text-base font-extralight max-w-md z-30">
+      <p className="absolute bottom-20 text-center md:text-left md:bottom-10 justify-center w-[80%] md:w-full md:left-10 text-brandOffWhite font-ibm text-base font-extralight max-w-md z-30">
         Step into the realm of the most prestigious technical fest, where we
         value bold ideas and innovations.
       </p>
