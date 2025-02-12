@@ -12,7 +12,9 @@ const index = () => {
             <p
             className="md:text-base font-ibm max-w-prose w-[80%] md:w-full text-justify md:[text-align-last:right]"
             >
-            We at ACM aim to ignite passion in young minds for technology and foster innovation. We conduct workshops, hackathons, podcasts, and blogs while offering members opportunities to excel in their fields through projects. Our goal is to empower youth to master computing and coding, gaining a technological edge. We provide high-quality education and open doors to new opportunities. Bound by our love for coding, ACM combines competition and collaboration, reaching milestones yearly with a growing team of bright minds. Join us as we explore the fascinating world of coding!
+            Welcome to Taqneeq 17.0, the annual Techfest of MPSTME, NMIMS Mumbai! This year, we take you on a journey through the Cosmic Rewind – an odyssey where the past, present, and future of technology collide in an interstellar fusion of innovation and creativity. Taqneeq is where aspiring tech enthusiasts, developers, and visionaries come together to compete, learn, and revolutionize the future. With a perfect blend of competitions, workshops, hackathons, and exhibitions, this year’s edition promises to be bigger and better than ever before. <br></br> <br></br>
+            Are you ready to travel through time and space, innovate, and conquer? Join us at Taqneeq 17.0 and be a part of an unforgettable tech experience!
+
             </p>
         </div> 
     </section>
