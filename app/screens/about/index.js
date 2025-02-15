@@ -2,7 +2,7 @@ import React from 'react'
 
 const index = () => {
   return (
-    <section
+    <section id='about'
       className="min-h-[90vh] max-h-[1440px] max-w-7xl flex flex-col md:flex-col justify-center items-center relative md:gap-5 mx-auto"
     >
         <hr className="w-1/2 border-2 md:border-4 absolute top-10 -left-1/4 text-brandOffWhite opacity-70"></hr>

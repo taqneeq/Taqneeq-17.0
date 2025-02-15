@@ -78,7 +78,9 @@ const Index = () => {
   }, []);
 
   return (
-    <section className="min-h-[90vh] max-h-[1440px] max-w-7xl flex flex-col justify-center items-center relative md:gap-5 mx-auto overflow-hidden">
+    <section className="min-h-[90vh] max-h-[1440px] max-w-7xl flex flex-col justify-center items-center relative md:gap-5 mx-auto overflow-hidden"
+    id='hero'
+    >
       {/* Background Text Layer */}
       <div className="absolute -z-20 w-full" id="base-1">
         <div className="absolute bottom-20 md:bottom-10 left-3 md:left-10">

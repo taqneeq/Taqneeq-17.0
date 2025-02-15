@@ -120,7 +120,7 @@ const PremiumCardGrid = () => {
   ];
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center p-8">
+    <section className="relative min-h-screen flex items-center justify-center p-8" id='competition'>
       <div className="max-w-7xl mx-auto w-full">
         <div className="relative mb-24">
         <hr className="w-1/2 border-2 md:border-4 absolute top-10 -left-1/4 text-brandOffWhite opacity-70"></hr>

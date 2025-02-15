@@ -28,11 +28,11 @@ const Navbar = () => {
       >
         <ul className="space-y-2 mt-4">
           {[
-            { path: '/screens/about', delay: 0 },
-            { path: '/screens/events', delay: 1 },
-            { path: '/screens/competitions', delay: 2 },
-            { path: '/screens/contact', delay: 3 },
-            { path: '/screens/hero', delay: 4 },
+            { path: '/#about', delay: 0, name:'/about' },
+            { path: '/#events', delay: 1, name:'/events' },
+            { path: '/#competitions', delay: 2, name:'/competitions' },
+            { path: '/#contact', delay: 3, name:'/contact' },
+            { path: '/#hero', delay: 4, name:'/home' },
           ].map((item, index) => (
             <li
               key={item.path}
@@ -44,7 +44,7 @@ const Navbar = () => {
               }}
             >
               <Link href={item.path}>
-                {item.path.split('/').pop()}
+                {item.path.split('/#').pop()}
               </Link>
             </li>
           ))}
