@@ -1,5 +1,5 @@
 import Contact from "@/app/screens/contact";
 
-export default function Contact() {
+export default function ContactPage() {
   return <Contact />;
 }

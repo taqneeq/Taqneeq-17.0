@@ -10,12 +10,15 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="absolute top-10 right-10 md:right-16 text-brandOffWhite font-ibm z-30 text-right">
+    <nav className="absolute top-10 right-10 md:right-16 text-brandOffWhite font-ibm 
+      z-30 text-right backdrop-filter backdrop-blur-sm bg-white/10 p-5 w-48 rounded-lg 
+      flex flex-col shadow-lg">
+      
       {/* Toggle list visibility on click with scale animation */}
       <p
         onClick={toggleListVisibility}
         className={`font-bold text-white cursor-pointer transition-all duration-300 ease-in-out hover:underline 
-          ${isListVisible ? 'scale-110' : ''}`}
+        w-full text-center ${isListVisible ? 'scale-110' : ''}`}
       >
         [ Navigate ]
       </p>
@@ -26,13 +29,13 @@ const Navbar = () => {
           isListVisible ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
-        <ul className="space-y-2 mt-4">
+        <ul className="space-y-2 mt-4 text-right">
           {[
-            { path: '/#about', delay: 0, name:'/about' },
-            { path: '/#events', delay: 1, name:'/events' },
-            { path: '/#competitions', delay: 2, name:'/competitions' },
-            { path: '/#contact', delay: 3, name:'/contact' },
-            { path: '/#hero', delay: 4, name:'/home' },
+            { path: '/about', delay: 0, name:'/about' },
+            { path: '/events', delay: 0.5, name:'/events' },
+            { path: '/competition', delay: 1, name:'/competitions' },
+            { path: '/contact', delay: 1.5, name:'/contact' },
+            { path: '/', delay: 2, name:'/home' },
           ].map((item, index) => (
             <li
               key={item.path}
@@ -44,25 +47,12 @@ const Navbar = () => {
               }}
             >
               <Link href={item.path}>
-                {item.path.split('/#').pop()}
+                {item.name}
               </Link>
             </li>
           ))}
         </ul>
       </div>
-
-      <style jsx>{`
-        @keyframes slideIn {
-          from {
-            transform: translateX(20px);
-            opacity: 0;
-          }
-          to {
-            transform: translateX(0);
-            opacity: 1;
-          }
-        }
-      `}</style>
     </nav>
   );
 };
