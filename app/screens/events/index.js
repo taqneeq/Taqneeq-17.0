@@ -1,9 +1,16 @@
 "use client";
 import React from 'react'
 import Image from "next/image";
-import C1 from "./comp1.svg";
+import Event1 from "./Event1.svg";
+import Event2 from "./Event2.svg";
+import Event3 from "./Event3.svg";
+import Event4 from "./Event4.svg";
+import Event5 from "./Event5.svg";
+import Event6 from "./Event6.svg";
+import Event7 from "./Event7.svg";
+import Event8 from "./Event8.svg";
 export default function competition() {
-    const comp = [C1, C1, C1];
+    const events = [Event1, Event2, Event3, Event4, Event5, Event6, Event7, Event8];
 
   return (
     <section
@@ -13,23 +20,24 @@ export default function competition() {
         <h1 className="font-BSD text-4xl md:text-5xl text-white absolute top-5 left-1/4 ml-4">/ [ Events ]</h1>
         <div
         
-        className="w-full mt-24 md:mt-5 grid grid-cols-1 sm:grid-cols-3 gap-4 justify-items-center"
+        className="w-full mt-24 md:mt-24 grid grid-cols-1 sm:grid-cols-3 gap-4 justify-items-center"
         
       >
-        {comp.map((comp, index) => (
+        {events.map((event, index) => (
           <div
             key={index}
             className="relative w-full h-96"
           >
             <Image
-              src={comp}
-              alt={`Competition ${index + 1}`}
+              src={event}
+              alt={`Event ${index + 1}`}
               fill
-              className="object-contain"
+              className="object-contain rounded-3xl"
             />
           </div>
         ))}
       </div>
+      
     </section>
   )
 }
