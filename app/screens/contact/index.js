@@ -37,18 +37,18 @@ export default function Contact() {
   ];
   return (
     <section
-      className="h-full py-20 w-full flex flex-col justify-center items-center p-8 gap-10 max-w-7xl mx-auto relative"
+      className="h-screen py-20 w-full flex flex-col justify-center items-center p-8 gap-10 max-w-7xl mx-auto relative"
       id="contact"
     >
       <div className="flex flex-col items-center gap-4">
-        <hr className="w-1/2 border-2 md:border-4 absolute top-10 -left-1/4 text-brandOffWhite opacity-70"></hr>
-        <h1 className="font-BSD text-4xl md:text-5xl text-white absolute top-5 left-1/4 ml-4">
-          / [ Contact Us ]
+        <hr className="w-1/2 border-1 md:border-2 absolute top-[10%] -left-1/4 text-brandGrey opacity-70"></hr>
+        <h1 className="font-BSD text-2xl md:text-3xl text-white absolute top-[8%] left-1/4 ml-4">
+          / [ CONTACT US ]
         </h1>
       </div>
 
       <a
-        className="relative w-full h-full sm:w-2/3 lg:w-1/2 md:py-10 bg-[#4d4d4d] backdrop-filter backdrop-blur-sm bg-opacity-20 border border-white/60 flex flex-col md:flex-row md:items-center justify-center gap-6 text-white text-center p-6 shadow-lg hover:bg-brandRed transition-colors duration-300 ease-in-out rounded-sm shadow-brandOffWhite/40 "
+        className="relative w-full h-fit   sm:w-2/3 lg:w-1/2 md:py-10 bg-[#4d4d4d] backdrop-filter backdrop-blur-sm bg-opacity-20 border border-white/60 flex flex-col md:flex-row md:items-center justify-center gap-6 text-white text-center p-6 shadow-lg hover:bg-brandRed transition-colors duration-300 ease-in-out rounded-sm shadow-brandOffWhite/40 "
         href="mailto:support@taqneeqfest.com"
       >
         <Mail className="text-purple-200 w-10 h-10" />
