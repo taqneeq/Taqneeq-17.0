@@ -6,12 +6,12 @@ const index = () => {
       id="about"
       className="h-screen max-h-[1440px] max-w-7xl flex flex-col md:flex-col justify-center items-center relative md:gap-5 mx-auto"
     >
-      <hr className="w-1/2 border-1 md:border-2 absolute top-[10%] -left-1/4 text-brandGrey opacity-70"></hr>
-      <h1 className="font-BSD text-2xl md:text-3xl text-white absolute top-[8%] left-1/4 ml-4">
+      <hr className="w-1/2 border-1 md:border-2 absolute top-[15%] md:top-[10%] -left-1/4 text-brandGrey opacity-70"></hr>
+      <h1 className="font-BSD text-2xl md:text-3xl text-white absolute top-[13%] md:top-[8%] left-1/4 ml-4">
         / [ About ]
       </h1>
       <div className="flex flex-row justify-center items-center relative md:gap-10 mx-auto">
-        <p className="md:text-xl font-ibm max-w-prose w-[80%] md:w-full">
+        <p className="mt-48 md:mt-10 md:text-xl font-ibm max-w-prose w-[80%] md:w-full">
           Welcome to Taqneeq 17.0, the annual Techfest of MPSTME, NMIMS Mumbai!
           This year, we take you on a journey through the Cosmic Rewind – an
           odyssey where the past, present, and future of technology collide in

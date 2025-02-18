@@ -2,30 +2,6 @@
 import { useState } from 'react';
 import { ArrowRight } from 'lucide-react';
 
-// const getIconComponent = (name) => {
-//   const icons = {
-//     crown: Crown,
-//     gem: Gem,
-//     shield: Shield,
-//     rocket: Rocket,
-//     diamond: Diamond,
-//   };
-//   const IconComponent = icons[name];
-//   return IconComponent ? <IconComponent size={32} /> : null;
-// };
-
-// const getTitleIcon = (name) => {
-//   const icons = {
-//     star: Star,
-//     'check-circle': CheckCircle,
-//     bolt: Bolt,
-//     award: Award,
-//     crown: Crown,
-//   };
-//   const IconComponent = icons[name];
-//   return IconComponent ? <IconComponent size={20} /> : null;
-// };
-
 const Card = ({ title, description, buttonText, link, bgLink }) => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isHovered, setIsHovered] = useState(false);
@@ -122,9 +98,9 @@ const PremiumCardGrid = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center p-8" id='competition'>
       <div className="max-w-7xl mx-auto w-full">
-        <div className="relative mb-24">
-        <hr className="w-1/2 border-2 md:border-4 absolute top-10 -left-1/4 text-brandOffWhite opacity-70"></hr>
-        <h1 className="font-BSD text-4xl md:text-5xl text-white absolute top-5 left-1/4 ml-4">/ [ Competitions ]</h1>
+        <div className="relative mb-36 md:mb-32">
+        <hr className="w-1/2 border-2 md:border-4 absolute mt-[24%] md:mt-[4%] -left-[45%] text-brandOffWhite opacity-70"></hr>
+        <h1 className="font-BSD text-4xl md:text-5xl text-white absolute mt-[20%] md:mt-[2.5%] left-1/5 md:left-[5%] ml-4">/ [ Competitions ]</h1>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {cards.map((card, index) => (

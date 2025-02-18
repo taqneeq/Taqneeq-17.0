@@ -18,13 +18,13 @@ export default function Competition() {
       className="min-h-screen max-w-7xl flex flex-col justify-center items-center relative md:gap-5 mx-auto" 
       id="events"
     >
-      <hr className="w-1/2 border-2 md:border-4 absolute top-10 -left-1/4 text-brandOffWhite opacity-70" />
-      <h1 className="font-BSD text-4xl md:text-5xl text-white absolute top-5 left-1/4 ml-4 mb-8">
+      <hr className="w-1/2 border-2 md:border-4 absolute top-28 md:top-10 -left-1/4 text-brandOffWhite opacity-70" />
+      <h1 className="font-BSD text-4xl md:text-5xl text-white absolute top-24 md:top-5 left-1/4 ml-4 mb-8">
         / [ Events ]
       </h1>
 
       {/* Added 'relative' to fix absolute element interference */}
-      <div className="relative w-full mt-32 md:mt-24 grid grid-cols-1 md:grid-cols-3 gap-4 justify-items-center">
+      <div className="relative w-full mt-44 md:mt-24 grid grid-cols-1 md:grid-cols-3 gap-4 justify-items-center">
         {events.map((event, index) => (
           <div key={index} className="relative w-full h-96">
             <Image

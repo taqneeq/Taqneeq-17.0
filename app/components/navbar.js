@@ -10,8 +10,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="absolute top-10 right-10 md:right-16 text-brandOffWhite font-ibm 
-      z-30 text-right backdrop-filter backdrop-blur-sm bg-white/10 p-5 w-48 rounded-lg 
+    <nav className="absolute top-6 right-10 md:right-16 text-brandOffWhite font-ibm 
+      z-30 text-right backdrop-filter backdrop-blur-sm bg-white/10 p-3 w-48 rounded-lg 
       flex flex-col items-center shadow-lg">
       
       {/* Toggle list visibility on click with scale animation */}
