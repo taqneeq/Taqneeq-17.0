@@ -48,7 +48,7 @@ export default function Contact() {
       </div>
 
       <a
-        className="mt-[220%] md:mt-0 w-full h-fit sm:w-2/3 lg:w-1/2 md:py-10 bg-[#4d4d4d] backdrop-filter backdrop-blur-sm bg-opacity-20 border border-white/60 flex flex-col md:flex-row md:items-center justify-center gap-6 text-white text-center p-6 shadow-lg hover:bg-brandRed transition-colors duration-300 ease-in-out rounded-sm shadow-brandOffWhite/40 "
+        className="mt-[200%] md:mt-0 w-full h-fit sm:w-2/3 lg:w-1/2 md:py-10 bg-[#4d4d4d] backdrop-filter backdrop-blur-sm bg-opacity-20 border border-white/60 flex flex-col md:flex-row md:items-center justify-center gap-6 text-white text-center p-6 shadow-lg hover:bg-brandRed transition-colors duration-300 ease-in-out rounded-sm shadow-brandOffWhite/40 "
         href="mailto:support@taqneeqfest.com"
       >
         <Mail className="text-purple-200 w-10 h-10" />

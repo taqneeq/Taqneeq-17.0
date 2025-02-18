@@ -11,7 +11,7 @@ const index = () => {
         / [ About ]
       </h1>
       <div className="flex flex-row justify-center items-center relative md:gap-10 mx-auto">
-        <p className="mt-48 md:mt-10 md:text-xl font-ibm max-w-prose w-[80%] md:w-full">
+        <p className="mt-44 md:mt-10 md:text-xl font-ibm max-w-prose w-[80%] md:w-full">
           Welcome to Taqneeq 17.0, the annual Techfest of MPSTME, NMIMS Mumbai!
           This year, we take you on a journey through the Cosmic Rewind – an
           odyssey where the past, present, and future of technology collide in
