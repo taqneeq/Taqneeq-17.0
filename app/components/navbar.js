@@ -10,7 +10,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="absolute top-10 md:top-[9%] right-10 md:right-16 text-brandOffWhite font-ibm z-30 text-right">
+    <nav className="absolute top-10 right-10 md:right-16 text-brandOffWhite font-ibm 
+      z-30 text-right backdrop-filter backdrop-blur-sm bg-white/10 p-5 w-48 rounded-lg 
+      flex flex-col items-center shadow-lg">
+      
       {/* Toggle list visibility on click with scale animation */}
       <p
         onClick={toggleListVisibility}
@@ -29,10 +32,10 @@ const Navbar = () => {
         <ul className="space-y-2 mt-4 text-right">
           {[
             { path: '/about', delay: 0, name:'/about' },
-            { path: '/events', delay: 0.5, name:'/events' },
-            { path: '/competition', delay: 1, name:'/competitions' },
-            { path: '/contact', delay: 1.5, name:'/contact' },
-            { path: '/', delay: 2, name:'/home' },
+            { path: '/events', delay: 1, name:'/events' },
+            { path: '/competition', delay: 2, name:'/competitions' },
+            { path: '/contact', delay: 3, name:'/contact' },
+            { path: '/', delay: 4, name:'/home' },
           ].map((item, index) => (
             <li
               key={item.path}
