@@ -20,7 +20,7 @@ export default function competition() {
         <h1 className="font-BSD text-4xl md:text-5xl text-white absolute top-5 left-1/4 ml-4">/ [ Events ]</h1>
         <div
         
-        className="w-full mt-24 md:mt-24 grid grid-cols-1 sm:grid-cols-3 gap-4 justify-items-center"
+        className="w-full mt-24 md:mt-24 grid grid-cols-1 md:grid-cols-3 gap-4 justify-items-center"
         
       >
         {events.map((event, index) => (
