@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "./components/navbar";
 import PageAnimatePresence from "@/app/components/PageAnimatePresence";
-import Image from "next/image";
+import LenisProvider from "./components/smooth";
 
 const impact = localFont({
   src: "./fonts/impact.ttf",
@@ -33,6 +33,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
         className={` ${ibm.variable} ${bigShouldersDisplay.variable} ${impact.variable} antialiased w-full min-h-screen relative`}
+        suppressHydrationWarning
       >
         <Navbar />
         <div className="fixed inset-0 z-0 h-screen w-screen">
@@ -43,7 +44,7 @@ export default function RootLayout({ children }) {
           />{" "}
         </div>
         <main className="relative z-10 w-full">
-          <PageAnimatePresence>{children}</PageAnimatePresence>
+          <LenisProvider>{children}</LenisProvider>
         </main>
       </body>
     </html>

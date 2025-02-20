@@ -1,5 +1,6 @@
-'use client';
-import React, { useEffect, useState } from "react";
+"use client";
+import React, { useEffect, useState, useRef } from "react";
+import { useInView } from "motion/react";
 
 const Index = () => {
   const [text1, setText1] = useState("");
@@ -7,7 +8,9 @@ const Index = () => {
   const [text3, setText3] = useState("");
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [rotation, setRotation] = useState(0);
-  
+  const ref = useRef();
+  const isInView = useInView(ref);
+
   const fullText1 = "TAQNEEQ 17.0";
   const fullText2 = "INNOVATION";
   const fullText3 = "MEETS REALITY";
@@ -16,9 +19,9 @@ const Index = () => {
     // Random movement animation with wider horizontal range
     const moveAstronaut = () => {
       const newX = (Math.random() - 0.5) * 50; // Random value between -8 and 8 (wider range)
-      const newY = (Math.random() - 0.5) * 6;  // Random value between -3 and 3 (smaller range)
+      const newY = (Math.random() - 0.5) * 6; // Random value between -3 and 3 (smaller range)
       setPosition({ x: newX, y: newY });
-      setRotation(prev => (prev + 1) % 360);
+      setRotation((prev) => (prev + 1) % 360);
     };
 
     const movementInterval = setInterval(moveAstronaut, 2000);
@@ -27,11 +30,16 @@ const Index = () => {
     let currentIndex1 = 0;
     const scrambleInterval1 = setInterval(() => {
       if (currentIndex1 <= fullText1.length) {
-        const scrambled = fullText1.slice(0, currentIndex1) + 
-          (currentIndex1 < fullText1.length ? 
-            Array(3).fill().map(() => 
-              String.fromCharCode(Math.floor(Math.random() * 26) + 65)
-            ).join('') : '');
+        const scrambled =
+          fullText1.slice(0, currentIndex1) +
+          (currentIndex1 < fullText1.length
+            ? Array(3)
+                .fill()
+                .map(() =>
+                  String.fromCharCode(Math.floor(Math.random() * 26) + 65)
+                )
+                .join("")
+            : "");
         setText1(scrambled);
         currentIndex1++;
       } else {
@@ -42,11 +50,16 @@ const Index = () => {
     let currentIndex2 = 0;
     const scrambleInterval2 = setInterval(() => {
       if (currentIndex2 <= fullText2.length) {
-        const scrambled = fullText2.slice(0, currentIndex2) + 
-          (currentIndex2 < fullText2.length ? 
-            Array(3).fill().map(() => 
-              String.fromCharCode(Math.floor(Math.random() * 26) + 65)
-            ).join('') : '');
+        const scrambled =
+          fullText2.slice(0, currentIndex2) +
+          (currentIndex2 < fullText2.length
+            ? Array(3)
+                .fill()
+                .map(() =>
+                  String.fromCharCode(Math.floor(Math.random() * 26) + 65)
+                )
+                .join("")
+            : "");
         setText2(scrambled);
         currentIndex2++;
       } else {
@@ -57,11 +70,16 @@ const Index = () => {
     let currentIndex3 = 0;
     const scrambleInterval3 = setInterval(() => {
       if (currentIndex3 <= fullText3.length) {
-        const scrambled = fullText3.slice(0, currentIndex3) + 
-          (currentIndex3 < fullText3.length ? 
-            Array(3).fill().map(() => 
-              String.fromCharCode(Math.floor(Math.random() * 26) + 65)
-            ).join('') : '');
+        const scrambled =
+          fullText3.slice(0, currentIndex3) +
+          (currentIndex3 < fullText3.length
+            ? Array(3)
+                .fill()
+                .map(() =>
+                  String.fromCharCode(Math.floor(Math.random() * 26) + 65)
+                )
+                .join("")
+            : "");
         setText3(scrambled);
         currentIndex3++;
       } else {
@@ -78,8 +96,10 @@ const Index = () => {
   }, []);
 
   return (
-    <section className="min-h-[90vh] max-h-[1440px] max-w-7xl flex flex-col justify-center items-center relative md:gap-5 mx-auto overflow-hidden"
-    id='hero'
+    <section
+      className="min-h-[90vh] max-h-[1440px] max-w-7xl flex flex-col justify-center items-center relative md:gap-5 mx-auto overflow-hidden"
+      id="hero"
+      ref={ref}
     >
       {/* Background Text Layer */}
       <div className="absolute -z-20 w-full" id="base-1">
@@ -90,7 +110,9 @@ const Index = () => {
         </div>
         <div className="absolute top-10 right-3 md:right-16 text-right">
           <h1 className="text-6xl md:text-8xl font-BSD font-retro font-bold text-brandOffWhite">
-            {text2}<br/>{text3}
+            {text2}
+            <br />
+            {text3}
           </h1>
         </div>
       </div>
@@ -129,13 +151,22 @@ const Index = () => {
               WebkitTextStroke: "2px #D6D5D5",
             }}
           >
-            {text2}<br/>{text3}
+            {text2}
+            <br />
+            {text3}
           </h1>
         </div>
       </div>
 
       {/* Description Text */}
-      <p className="absolute bottom-12 text-center md:text-left md:bottom-10 justify-center w-[80%] md:w-full md:left-10 text-brandOffWhite font-ibm text-base font-extralight max-w-md z-30">
+      <p
+        className="absolute bottom-12 text-center md:text-left md:bottom-10 justify-center w-[80%] md:w-full md:left-10 text-brandOffWhite font-ibm text-base font-extralight max-w-md z-30"
+        style={{
+          opacity: isInView ? 1 : 0,
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+          transitionDelay: "0.3s",
+        }}
+      >
         Step into the realm of the most prestigious technical fest, where we
         value bold ideas and innovations.
       </p>

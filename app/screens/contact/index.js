@@ -41,9 +41,9 @@ export default function Contact() {
       id="contact"
     >
       <div className=" flex flex-col items-center gap-4">
-        <hr className="w-1/2 border-1 md:border-2 absolute top-[14%] md:top-[10%] -left-1/4 text-brandGrey opacity-70"></hr>
-        <h1 className="font-BSD text-2xl md:text-3xl text-white absolute top-[12%] md:top-[8%] left-1/4 ml-4">
-          / [ CONTACT US ]
+        <hr className="w-1/2 border-1 md:border-2 absolute top-[15%] md:top-[10%] -left-1/4 text-brandGrey opacity-70"></hr>
+        <h1 className="font-BSD text-2xl md:text-3xl text-white absolute top-[13%] md:top-[8%] left-1/4 ml-4">
+          / [ Contact Us ]
         </h1>
       </div>
 
