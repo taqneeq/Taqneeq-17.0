@@ -31,10 +31,10 @@ const Navbar = () => {
       >
         <ul className="space-y-2 mt-4 text-right">
           {[
-            { path: '/about', delay: 0, name:'/about' },
-            { path: '/events', delay: 1, name:'/events' },
-            { path: '/competition', delay: 2, name:'/competitions' },
-            { path: '/contact', delay: 3, name:'/contact' },
+            { path: '/#about', delay: 0, name:'/about' },
+            { path: '/#events', delay: 1, name:'/events' },
+            { path: '/#competition', delay: 2, name:'/competitions' },
+            { path: '/#contact', delay: 3, name:'/contact' },
             { path: '/', delay: 4, name:'/home' },
           ].map((item, index) => (
             <li
