@@ -28,32 +28,13 @@ export default function App() {
             Plus, scan QR codes to earn points and redeem exciting rewards!
             Don't just attend Taqneeq, experience it."
           </p>
-          <div className="flex flex-col md:flex-row items-center justify-center md:justify-start gap-4">
-            <a
-              className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 transition-colors shadow-lg rounded-md  inline-block
-            "
-              href="/app-release.apk"
-              download={true}
-            >
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  viewBox="0 0 24 24"
-                  className=" inline my-auto"
-                >
-                  <path
-                    fill="#ffffff"
-                    d="M1 18q.225-2.675 1.638-4.925T6.4 9.5L4.55 6.3q-.15-.225-.075-.475T4.8 5.45q.2-.125.45-.05t.4.3L7.5 8.9Q9.65 8 12 8t4.5.9l1.85-3.2q.15-.225.4-.3t.45.05q.25.125.325.375t-.075.475L17.6 9.5q2.35 1.325 3.762 3.575T23 18zm6-2.75q.525 0 .888-.363T8.25 14t-.363-.888T7 12.75t-.888.363T5.75 14t.363.888t.887.362m10 0q.525 0 .888-.363T18.25 14t-.363-.888T17 12.75t-.888.363t-.362.887t.363.888t.887.362"
-                  />
-                </svg>{" "}
-                Download Now
-              </span>
-            </a>
+          <div className="flex flex-row items-center justify-center md:justify-start gap-4">
             <a href="https://apps.apple.com/in/app/taqneeq-fest/id6741360884">
-              <img src="/app.svg" className="my-5"></img>
+              <img src="/app.svg" className="my-5 w-full"></img>
             </a>{" "}
+            <a href="/app-release.apk" download={true}>
+              <img src="/android.svg" className="my-5 w-full"></img>
+            </a>
           </div>
         </div>
 
