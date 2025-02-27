@@ -35,17 +35,7 @@ export default function RootLayout({ children }) {
         className={` ${ibm.variable} ${bigShouldersDisplay.variable} ${impact.variable} antialiased w-full min-h-screen relative`}
         suppressHydrationWarning
       >
-        <Navbar />
-        <div className="fixed inset-0 z-0 h-screen w-screen">
-          <img
-            src={"/cosmic_bg.png"}
-            alt="cosmic"
-            className="opacity-60 h-full w-full object-cover"
-          />{" "}
-        </div>
-        <main className="relative z-10 w-full">
-          <LenisProvider>{children}</LenisProvider>
-        </main>
+        <LenisProvider>{children}</LenisProvider>
       </body>
     </html>
   );

@@ -41,7 +41,7 @@ export default function Contact() {
     >
       <div className="flex flex-col items-center gap-4">
         <hr className="w-1/2 border border-gray-400 absolute top-[15%] md:top-[10%] -left-1/4 opacity-70"></hr>
-        <h1 className="text-2xl md:text-3xl text-white absolute top-[13%] md:top-[8%] left-1/4 ml-4 font-bold">
+        <h1 className="font-BSD text-2xl md:text-3xl text-white absolute top-[13%] md:top-[8%] left-1/4 ml-4 font-bold">
           / [ Contact Us ]
         </h1>
       </div>
