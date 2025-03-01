@@ -8,6 +8,9 @@ import Event5 from "./Event5.svg";
 import Event6 from "./Event6.svg";
 import Event7 from "./Event7.svg";
 import Event8 from "./Event8.svg";
+import Event9 from "./Event9.svg";
+import Event10 from "./Event10.svg";
+import Event11 from "./Event11.svg";
 import { useRef } from "react";
 import { useInView } from "motion/react";
 
@@ -21,6 +24,9 @@ export default function Competition() {
     Event6,
     Event7,
     Event8,
+    Event9,
+    Event10,
+    Event11
   ];
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true }); // Trigger only once

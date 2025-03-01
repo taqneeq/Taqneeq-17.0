@@ -32,7 +32,7 @@ export default function App() {
             <a href="https://apps.apple.com/in/app/taqneeq-fest/id6741360884">
               <img src="/app.svg" className="my-5 w-full"></img>
             </a>{" "}
-            <a href="/app-release.apk" download={true}>
+            <a href="/TaqneeqFest.apk" download={true}>
               <img src="/android.svg" className="my-5 w-full"></img>
             </a>
           </div>
