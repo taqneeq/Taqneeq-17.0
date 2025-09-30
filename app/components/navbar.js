@@ -36,7 +36,6 @@ const Navbar = () => {
             { path: "/#events", delay: 1, name: "/events" },
             { path: "/#competition", delay: 2, name: "/competitions" },
             { path: "/#contact", delay: 3, name: "/contact" },
-            { path: "/app", delay: 3, name: "/app" },
             { path: "/", delay: 4, name: "/home" },
           ].map((item, index) => (
             <li
